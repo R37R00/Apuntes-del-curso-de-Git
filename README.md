@@ -172,3 +172,28 @@ Este comando se utiliza para generar una nueva clave SSH. Aquí te explico un po
 ### Elminar ramas
 #### \*Comandos:
 - **git remote prune origin:** Este es el comando que se utiliza para eliminar referencias a ramas remotas que ya no existen en el repositorio remoto.
+
+
+# Clase 4
+# Push, Pull y Pull request
+
+#### \* Comandos:
+- **git Push:** Nos sirve para empujar cualquier cambio o modificación del repositorio local al reposotiorio remoto.
+Nota: Si no se especifica nada, Git intentará subir todas las ramas locales y cambios realizados de manera local al repositorio remoto.
+- **git push (rama de destino):** Sube las modificaciones realizadas en la rama local a la rama especificada.
+- **git push -u origin (rama a vincular):** El comando git push -u es una forma de configurar una relación entre tu rama local y una rama en el repositorio remoto. La opción -u es una abreviatura de --set-upstream. Sirve para hacerle entender a git que en un futuro cuando en un futuro al hacer el comando git push o git pull sin especificar la rama, Git sabrá que te refieres a la rama que vinculaste con este comando.
+- **git push -f:** El comando git push -f es una versión forzada del comando git push. La opción -f es una abreviatura de --force.
+
+Cuando haces git push -f origin login, por ejemplo, estás forzando a Git a empujar tus cambios a la rama login en el repositorio remoto origin, incluso si esto resulta en la pérdida de commits en el repositorio remoto.
+
+**Nota:**
+**Esto puede ser peligroso si otros están trabajando en la misma rama, ya que sus cambios pueden ser sobrescritos. Por lo tanto, se recomienda usar git push -f con precaución y generalmente solo en ramas donde eres el único que está trabajando.**
+
+**Por ejemplo:**
+Cuando haces git push -u origin login, por ejemplo, estás empujando tus cambios a la rama login en el repositorio remoto origin, y también estás configurando esa rama remota para ser la rama “upstream” o “de seguimiento” para tu rama local login.
+
+**Esto tiene un par de ventajas:**
+
+En el futuro, puedes simplemente hacer git push o git pull sin especificar la rama, y Git sabrá que te refieres a la rama login en origin.
+Git puede darte información sobre si tu rama local está adelante, detrás o ha divergido de la rama remota.
+- **git pull:** Nos sirve para jalar o descargar los cambios o modificaciones del repositorio remoto al local.
