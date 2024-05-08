@@ -197,3 +197,23 @@ Cuando haces git push -u origin login, por ejemplo, estás empujando tus cambios
 En el futuro, puedes simplemente hacer git push o git pull sin especificar la rama, y Git sabrá que te refieres a la rama login en origin.
 Git puede darte información sobre si tu rama local está adelante, detrás o ha divergido de la rama remota.
 - **git pull:** Nos sirve para jalar o descargar los cambios o modificaciones del repositorio remoto al local.
+
+## Pull Request
+Un pull request o de forma abreviada **PR**, es una petición de cambios que se envía al repositorio original de otra persona.
+Por ejemplo encuentro un repositorio público muy interesante en el que quiero realizar un aporte y para avisar al dueño de ese repositorio hago un pull request para avisarle que quiero añadir cambios a su repositorio. Ya depende del dueño si acepta los cambios o no.
+
+### ¿Cómo hacer una PR?
+Tenemos que subir  nuestra rama con **git push** y a continuación hay 2 manera:
+- La rama la subiste recientemente y te aparece la opción en GitHub > Code.
+- Irnos al apartado de Pull Request.
+### Hacer una buena PR
+1. Enfocar tu código en una sola cosa.
+2. Explica tu pull request.
+
+#### \*Comandos:
+- **git reflog show:** Se utiliza para mostrar un registro de todas las acciones que modificaron el puntero HEAD en tu repositorio Git. Esto incluye cosas como los commits, los cambios de rama y otros movimientos de HEAD.
+
+### Revisar una PR
+1. Proporciona siempre un feedback positivo.
+2. Concreción  y claridad.
+3. Entiende el contexto 
