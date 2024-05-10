@@ -236,3 +236,12 @@ Es una estrategia de desarrollo de software en la que todos los desarrolladores 
 Sólo la rama main y ramas auxiliares efímeras que quieran ser integradas por medio de una pull request.
 
 - ### Ship / Show / Ask
+1. **Ship:** Se fusiona en la rama principal sin revisión.
+2. **Show:** Abre una petición de cambios para ser revisado por CI, pero se fusiona inmediatamente.
+3. **Ask:** Ask una PR para discutir los cambios antes de fusionarlos.
+
+#### Reglas:
+- Tener un buen sistema de CI/CD(Interacción Contínua y Despliegue Contínuo).
+- Las revisiones de código no son requerimientos.
+- Las ramas son lo más pequeñas posibles.
+- La personas confían en el resto del equipo.
