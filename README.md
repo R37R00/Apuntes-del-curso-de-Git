@@ -317,7 +317,7 @@ El comando git checkout se utiliza principalmente para dos cosas:
 - **git checkout (hash del commit)**.
 - **git checkout nombre-del-archivo:** Este comando nos sirve para revertir el archivo que especificamos al último commit que hicimos.
 
-# Clase 7(Última clase de Git)
+
 # Hooks, Alias y trucos en Git
 ## ¿Qué es un Hook?
 
